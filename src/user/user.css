@@ -1,0 +1,44 @@
+.user {
+    position: relative;
+    width: 31%;
+    border: 1px solid #c5c5c5;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px 0px #a8a8a8;
+    background: linear-gradient(0deg, #fff 70%, #d5d5d5);
+    transition: .4s linear;
+}
+
+.remove {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    padding: 10px;
+    background: red;
+    z-index: -10;
+    border-radius: .5rem;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 40px 20px #b2b2b2;
+    transition: .3s ease-in-out;
+    font-size: 12px;
+}
+
+.user:hover .remove {
+    z-index: 10;
+    display: block;
+}
+
+@media(max-width:768px) {
+    .user {
+        width: 47%;
+    }
+}
+
+@media(max-width:576px) {
+    .user {
+        width: 100%;
+    }
+}
