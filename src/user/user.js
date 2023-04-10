@@ -12,12 +12,14 @@ const User = (props) =>{
             <UserLogo 
                 img={props.img} 
                 name={props.name} 
-                surName={props.surName}/>
+                surName={props.surName}
+            />
             <UserContact 
                 company={props.company} 
                 email={props.email} 
                 phone={props.phone}  
-                website={props.website}/>
+                website={props.website}
+            />
         </div>
     )
 }
